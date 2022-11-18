@@ -626,15 +626,93 @@ address {
   /* color: var(--additional-color); */
 }
 
+/* try */
+/* .footer {
+  display: flex;
+} */
+.sign-wrapper {
+  position: relative;
+  align-items: baseline;
+  align-content: center;
+  margin-left: 93px;
+}
+.sign-field {
+  margin-right: 12px;
+  padding: 0 20px;
+  width: 340px;
+  height: 50px;
+  background-color: #2f303a;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.sign-fiend::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transform: translateX(16px);
+}
+.sign-field-mark {
+  position: absolute;
+  font-style: normal;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-btn {
+  padding: 10px 28px;
+
+  min-width: 200px;
+  min-height: 50px;
+  color: var(--additional-color);
+  background-color: var(--accent-color);
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
+
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.sign-item {
+  position: absolute;
+  right: 15px;
+  top: 55%;
+  fill: #ffffff;
+}
+
+/* .hero-button {
+  margin: auto;
+  display: block;
+  min-width: 216px;
+  min-height: 50px;
+  padding: 10px 32px;
+  color: var(--additional-color);
+  background-color: var(--accent-color);
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* try */
 /* css для сторінки Портфоліо */
 /*  пробую початок */
-
-/* .portfolio-list-link:nth-child(3n) {
-  margin-right: 8px;
-}
-.portfolio-list-link:nth-last-child(-n + 3) {
-  margin-bottom: 30px;
-} */
 
 /* оформлення сітки з картинок */
 .portfolio-examples {
@@ -810,6 +888,9 @@ address {
   opacity: 0;
   pointer-events: none;
 }
+/* оформлення модального вікна */
+
+/* оформлення модального вікна */
 
 /* animation */
 
