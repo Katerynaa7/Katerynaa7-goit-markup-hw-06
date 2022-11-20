@@ -630,10 +630,12 @@
       
           <input class="sign-field" type="email" name="user-email" id="email" placeholder="E-mail" >
           
-          <button class="sign-btn" type="submit">Підписатись</button>
-          <svg class="sign-item" width="24" height="24">
-            <use href="./img/icons/icons.svg#icon-icon-send"></use>
-          </svg>
+        
+            <button class="sign-btn" type="submit">Підписатись</button>
+            <svg class="sign-item" width="24" height="24">
+              <use href="./img/icons/icons.svg#icon-icon-send"></use>
+            </svg>
+        
       
         </div>
       </div>
@@ -650,7 +652,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" data-modal-close>Закрити модальне вікно</button>
-        <strong>Залиште свої дані, ми вам передзвонимо</strong>
+        <strong class="modal-text">Залиште свої дані, ми вам передзвонимо</strong>
         <form class="modal-form" name="modal_form">
           <div class="modal-form-group" role="group">
             <label class="modal-form-label" for="user_name">Ім'я</label>
@@ -678,13 +680,13 @@
              <textarea class="modal-form-message" name="user_message" id="user-message" 
              rows="6"></textarea>
             </div>
-             <div class="" role="group">
+             <div class="modal-form-agreement" role="group">
             <input class="modal-form-checkbox" type="checkbox" name="" id="user-agreement">
-            <label for="user-agreement">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+            <label class="modal-form-agreement-desc" for="user-agreement">Погоджуюся з розсилкою та приймаю <a href="" class="modal-form-agreement-link">Умови договору</a>
             </label>
           </div>
          
-          <button class="modal-form-btn" type="submit">Відправити</button>
+          <button class="modal-form-btn hero-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>
