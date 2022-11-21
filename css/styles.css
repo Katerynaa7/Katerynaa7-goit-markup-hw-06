@@ -166,7 +166,6 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 300ms;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -215,7 +214,6 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .site-contact .link:not(:last child) {
   margin-right: 30px;
@@ -435,7 +433,6 @@ body {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .socials-icon-main {
   fill: var(--icon-color);
@@ -504,7 +501,6 @@ body {
   transition-property: color, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .clients-icon {
   fill: currentColor;
@@ -570,7 +566,6 @@ address {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 
 .footer-contact {
@@ -615,7 +610,6 @@ address {
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .socials-icon {
   fill: var(--additional-color);
@@ -631,11 +625,10 @@ address {
   display: flex;
 } */
 .sign-wrapper {
-  position: relative;
+  /* position: relative; */
   align-items: baseline;
   align-content: center;
   margin-left: 93px;
-  outline: 1px solid red;
 }
 .sign-field {
   margin-right: 12px;
@@ -666,6 +659,7 @@ address {
 
 .sign-btn {
   padding: 10px 28px;
+  gap: 10px;
 
   min-width: 200px;
   min-height: 50px;
@@ -675,8 +669,6 @@ address {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  align-items: center;
-  text-align: center;
 
   letter-spacing: 0.06em;
   border: none;
@@ -684,9 +676,16 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+.sign-field-btn {
+  display: inline-flex;
+  position: relative;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
 .sign-item {
   position: absolute;
-  right: 20px;
+  right: 15px;
   top: 100%;
   fill: #ffffff;
   transform: translateY(-40px);
@@ -738,7 +737,6 @@ address {
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .portfolio-list .portfolio-list-button:hover,
 .portfolio-list .portfolio-list-button:focus {
@@ -759,7 +757,6 @@ address {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .portfolio-examples-link:hover,
 .portfolio-examples-link:focus {
@@ -805,7 +802,6 @@ address {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .portfolio-examples-link:hover .portfolio-overlay {
   transform: translateY(0%);
@@ -838,7 +834,6 @@ address {
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -846,6 +841,7 @@ address {
   pointer-events: none;
 }
 .modal {
+  position: relative;
   padding: 40px;
   width: 528px;
   height: 581px;
@@ -858,13 +854,37 @@ address {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .portfolio-try {
   animation: left-to-right 100ms ease 200ms 1 both;
 }
+/* .modal-button {
+  position: absolute;
+  padding: 0;
+  top: 6;
+  right: 6;
+  background-color: var(--additional-color);
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+} */
+
 .modal-button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 6px;
+  right: 6px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-form-close {
+  background-size: contain;
+  align-items: center;
 }
 .is-hidden {
   visibility: hidden;
@@ -874,15 +894,13 @@ address {
 /* оформлення модального вікна */
 .modal-text {
   display: block;
-  width: 370px;
+
   text-align: center;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: calc(30 / 20);
   letter-spacing: 0.03em;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 .modal-form-group {
   margin-bottom: 20px;
@@ -901,17 +919,15 @@ address {
 }
 .modal-form-field {
   padding-left: 42px;
-  padding-right: 42px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: 1px solid transparent;
   outline-offset: -1px;
-  transition-property: outline-color;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .modal-form-field:focus {
   outline-color: var(--accent-color);
@@ -939,7 +955,6 @@ address {
   transition-property: outline-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .modal-form-message:focus {
   outline-color: var(--accent-color);
@@ -950,6 +965,9 @@ address {
   justify-content: center;
   gap: 9px;
   margin-bottom: 30px;
+}
+.modal-form-agreement-desc {
+  color: var(--secondary-text-color);
 }
 .modal-form-agreement-link {
   color: var(--accent-color);
@@ -969,7 +987,6 @@ address {
   transition-property: background-size, outline-color? background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
 }
 .modal-form-checkbox:checked {
   outline-color: var(--accent-color);
