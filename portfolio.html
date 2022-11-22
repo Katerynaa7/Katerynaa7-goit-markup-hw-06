@@ -285,7 +285,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+      <footer class="footer">
       <div class="container footer-contact">
          <div class="">
           <a href="./index.html" class="footer-logo logo"
@@ -374,13 +374,21 @@
           <div class="sign-wrapper">
         <p class="sign-text footer-header">Підпишіться на розсилку</p>
       
-          <input class="sign-field" type="email" name="user-email" id="email" placeholder="E-mail" >
+          
+       <form class="sign-form" name="sign-form">
+        <input class="sign-field" type="email" name="user-email" id="email" placeholder="E-mail" >
           
         
-            <button class="sign-btn" type="submit">Підписатись</button>
+        <div class="sign-field-btn">
+          <button class="sign-btn" type="submit">Підписатись
             <svg class="sign-item" width="24" height="24">
-              <use href="./img/icons/icons.svg#icon-icon-send"></use>
-            </svg>
+          <use href="./img/icons/icons.svg#icon-icon-send"></use>
+          </svg>
+          </button>
+          
+        </div>
+
+        </form>
         
       
         </div>
