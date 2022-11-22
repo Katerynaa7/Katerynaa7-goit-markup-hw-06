@@ -620,12 +620,11 @@ address {
   /* color: var(--additional-color); */
 }
 
-/* try */
-/* .footer {
+/* Footer input */
+.sign-form {
   display: flex;
-} */
+}
 .sign-wrapper {
-  /* position: relative; */
   align-items: baseline;
   align-content: center;
   margin-left: 93px;
@@ -633,7 +632,7 @@ address {
 .sign-field {
   margin-right: 12px;
   padding: 0 20px;
-  width: 340px;
+  width: 358px;
   height: 50px;
   background-color: #2f303a;
   border: none;
@@ -658,10 +657,11 @@ address {
 }
 
 .sign-btn {
-  padding: 10px 28px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 32px;
   gap: 10px;
 
-  min-width: 200px;
   min-height: 50px;
   color: var(--additional-color);
   background-color: var(--accent-color);
@@ -676,22 +676,13 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-.sign-field-btn {
-  display: inline-flex;
-  position: relative;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
+
 .sign-item {
-  position: absolute;
-  right: 15px;
-  top: 100%;
   fill: #ffffff;
-  transform: translateY(-40px);
 }
 
-/* try */
+/* Footer input*/
+
 /* css для сторінки Портфоліо */
 /*  пробую початок */
 
